@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Web Half-Life Model Viewer</title>
-  </head>
+  <title>Web Half-Life Model Viewer</title>
 
-  <body>
-    <div id="root"></div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    #root {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function(m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function() {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+    .content {
+      text-align: center;
+    }
 
-      ym(52229089, "init", {
-        id: 52229089,
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true
-      });
-    </script>
-    <noscript>
-      <div>
-        <img
-          src="https://mc.yandex.ru/watch/52229089"
-          style="position:absolute; left:-9999px;"
-          alt=""
-        />
-      </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-  </body>
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(52229089, "init", {
+      id: 52229089,
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/52229089" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script type="text/javascript" src="bundle.5d295942e18f44ac9b12.js"></script>
+</body>
 </html>
